@@ -11,8 +11,6 @@ hbs.registerPartials(__dirname + "/views/partials");
 app.set('view engine', 'hbs');
 
 // Middleware
-
-
 app.use((req,res,next) => {
 	var now = new Date().toString();
 	var log = `${now} : ${req.method} ${req.path} \n`;
